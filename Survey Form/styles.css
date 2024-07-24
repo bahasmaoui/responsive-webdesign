@@ -1,0 +1,78 @@
+html { 
+    background: url(https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+main{
+    width: 35%;
+    height: 100vw;
+    margin: auto;
+    background-color: rgb(0,0,0);
+    padding: 20px;
+    max-height:900px;
+    border-radius: 15px ;
+}
+body{
+    font-family: sans-serif;
+    color:#f2e8cc;
+
+}
+input[type="text"], input[type="email"], input[type="number"],label, select{
+    width: 100%;
+
+}
+input[type="text"], input[type="email"], input[type="number"], select{
+    background-color: white;
+    color:black;
+    height:2em;
+    border:1px solid white;
+    border-radius: 35px;
+    margin:10px 0;
+    padding:0 10px
+}
+#title{
+    text-align:center;
+    color:#f2e8cc;
+}
+#description{
+    font-style:italic;
+}
+fieldset{
+    border:0;
+    padding-top:30px
+}
+legend{
+    font-weight:bolder;
+    font-size:15px
+}
+textarea{
+    margin:auto;
+}
+.gender_section{
+    width:100% ;
+    margin:15px;
+    display:flex;
+    justify-content:center;
+    
+}
+#symptoms{
+    width:100%;
+    margin:35px 0;
+}
+.symptoms_checkbox{
+    display:flex;
+    flex-wrap:wrap;
+}
+input[type="submit"]{
+    width:100%;
+    font-weight:bold;
+    height:5%;
+    padding:5px;
+    color:white;
+    background-color:black;
+    border:2px solid white;
+    border-radius:5px;
+    margin-top:50px
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h3>Survey Form</h3>
+        <h1 id="title">ZOMBIE INFECTION REPORT</h1>
+        <p id="description">Please Fill out the form if you have been bitten by a Zombie</p>
+        <hr>
+        <form id="survey-form">
+            <fieldset>
+                <legend>About You</legend>
+                <label id="name-label" for="name">Name:<input required id="name" type="text" placeholder="eg: Mehdi ben Achour"></label>
+                <label  for="email" id="email-label">Email<input required id="email" type="email" placeholder="name@domain.tn"></label>
+                <label for="number" id="number-label">Age:<input id="number" type="number" min="13" max="120" placeholder="age"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Infection</legend>
+                <label for="bite">
+                        <select name="bite" id="dropdown">
+                            <option value="">(Choose the part of your body closer to the bite)</option>
+                            <option value="1">Neck</option>
+                            <option value="2">Face</option>
+                            <option value="3">Arms/Legs</option>
+                            <option value="4">Tummy/Back</option>
+                        </select>
+                    </label>
+
+<section class="gender_section">
+                <label for="gender"><input type="radio" name="gender" id="Male" value="male"/>Male</label>
+                <label for="gender"><input type="radio" name="gender" id="Female" value="female"/>Female</label>
+                
+</section>
+<section id="symptoms">
+
+    <p class="symptoms_caption"><i>Please tick whatever symptoms you've been experiencing: </i></p>
+
+<div class="symptoms_checkbox">
+
+<label for="headache"> <input type="checkbox" id="headache" value="1">Headache</label>
+
+<label for="eyepain"><input type="checkbox" id="eyepain" value="2">Eye Pain</label>
+
+<label for="fever"><input type="checkbox" id="fever" value="3">Fever</label>
+
+<label for="appetite"><input type="checkbox" id="appetite" value="4">Appetite for Brains</label>
+
+<label for="other"><input type="checkbox" id="other"value="5">Other</label>
+
+</div>
+
+</section>
+                </label>
+<section class="desc_section">
+<label for="desc" id="desc_label">Add some further details about the bite?</label>
+<textarea id="desc" placeholder="A zombie chased me..." cols="50"></textarea></label>
+            </section>
+            </fieldset>
+    <input type="submit" value="Submit" id="submit">
+        </form>
+        
+
+    </main>
+</body>
+
+</html>
+
+
